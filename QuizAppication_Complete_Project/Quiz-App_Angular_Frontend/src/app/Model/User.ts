@@ -6,7 +6,7 @@ export class User {
   public lastName: string;
   public email: string;
   public contact: string;
-  public isAdmin: boolean;
+  public role: string;
 
   constructor(
     id: number,
@@ -16,7 +16,7 @@ export class User {
     lastName: string,
     email: string,
     contact: string,
-    isAdmin: boolean
+    role: string
   ) {
     this.id = id;
     this.username = username;
@@ -25,6 +25,6 @@ export class User {
     this.lastName = lastName;
     this.email = email;
     this.contact = contact;
-    this.isAdmin = isAdmin;
+    this.role =role;
   }
 }

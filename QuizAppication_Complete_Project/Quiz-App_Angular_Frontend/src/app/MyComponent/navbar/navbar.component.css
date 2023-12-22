@@ -1,6 +1,6 @@
 nav {
     width: 100vw;
-    position: fixed;
+    position:static;
     height: 3rem;
     line-height: 2rem;
     background: rgb(228, 205, 205);

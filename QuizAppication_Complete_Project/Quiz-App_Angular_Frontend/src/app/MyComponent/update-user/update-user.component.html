@@ -34,13 +34,14 @@
     </div>
 
     <div class="form-group">
-      <label for="isAdmin">Is Admin:</label>
-      <input type="checkbox" id="isAdmin" [(ngModel)]="user.isAdmin" name="isAdmin" class="form-control" required>
-    </div>
-
+      <label for="role">Role</label>
+      <select class="form-control" id="role" name="role" [(ngModel)]="user.role">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+      </select>
+  </div>
+  
     <button type="submit" class="btn btn-primary">Update User</button>
-    <!-- <p>isAdmin value: {{ user.isAdmin }}</p> -->
-    <p>isAdmin value: {{ user.username }}</p>
   </form>
 </div>
 </form>

@@ -1,5 +1,10 @@
-#style{
-    color:black;
-    background-color:pink;
+.footer {
+    position:static;
+    left: 0;
+    bottom: 4%;
+    width: 100%;
+    height:8%;
+    background-color:rgb(233, 203, 203);
+    color:rgba(0, 0, 0, 0.95);
     text-align: center;
-}
+ }

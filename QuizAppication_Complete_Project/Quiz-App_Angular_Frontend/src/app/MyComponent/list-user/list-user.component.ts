@@ -20,9 +20,7 @@ export class ListUserComponent implements OnInit {
       this.users = users;
     });
   }
-  getUserAdminStatus(user: User): boolean {
-    return user.isAdmin;
-  }
+  
   navigateToUpdatePage(userId: number) {
     // Navigate to the update user page with the user's ID
     this.router.navigate(['/update-user', userId]);
