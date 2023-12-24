@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'; 
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,14 @@ import { AddQuestionComponent } from './MyComponent/add-question/add-question.co
 import { ListQuizComponent } from './MyComponent/list-quiz/list-quiz.component';
 import { CreateQuizComponent } from './MyComponent/create-quiz/create-quiz.component';
 import { QuizAttemptComponent } from './MyComponent/quiz-attempt/quiz-attempt.component';
+import { LoginComponent } from './auth/login/login.component';
+import { UserDashboardComponent } from './MyComponent/user-dashboard/user-dashboard.component';
+import { SignUpComponent } from './auth/sign-up/singup.component';
+import { AdminNavbarComponent } from './MyComponent/admin-navbar/admin-navbar.component';
+import { UserNavbarComponent } from './MyComponent/user-navbar/user-navbar.component';
+import { AdminDashboardComponent } from './MyComponent/admin-dashboard/admin-dashboard.component';
+import { ContactUsComponent } from './MyComponent/contact-us/contact-us.component';
+import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +46,23 @@ import { QuizAttemptComponent } from './MyComponent/quiz-attempt/quiz-attempt.co
     AddQuestionComponent,
     ListQuizComponent,
     CreateQuizComponent,
-    QuizAttemptComponent  ],
+    QuizAttemptComponent,
+    LoginComponent,
+    SignUpComponent ,
+    UserDashboardComponent,
+    AdminNavbarComponent,
+    UserNavbarComponent ,
+    AdminDashboardComponent,
+    ContactUsComponent,
+    AboutUsComponent,
+],
   imports: [
     BrowserModule,
     AppRoutingModule ,
     HttpClientModule ,
     FormsModule ,
-    RouterModule
+    RouterModule ,
+    ReactiveFormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

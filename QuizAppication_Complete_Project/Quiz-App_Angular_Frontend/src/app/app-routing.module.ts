@@ -11,8 +11,21 @@ import { AddQuestionComponent } from './MyComponent/add-question/add-question.co
 import { ListQuizComponent } from './MyComponent/list-quiz/list-quiz.component';
 import { CreateQuizComponent } from './MyComponent/create-quiz/create-quiz.component';
 import { QuizAttemptComponent } from './MyComponent/quiz-attempt/quiz-attempt.component';
+import { LoginComponent } from './auth/login/login.component';
+import { AdminDashboardComponent } from './MyComponent/admin-dashboard/admin-dashboard.component';
+import { UserDashboardComponent } from './MyComponent/user-dashboard/user-dashboard.component';
+import { SignUpComponent } from './auth/sign-up/singup.component';
+import { ContactUsComponent } from './MyComponent/contact-us/contact-us.component';
+import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
+
 const routes: Routes = [
   {path:'' ,component:HomeComponent},
+
+
+  {path:'login',component:LoginComponent},
+  {path:'signup' ,component:SignUpComponent},
+  {path:'admin-dashboard' ,component:AdminDashboardComponent},
+  {path:'user-dashboard' ,component:UserDashboardComponent},
   {path:'list-user', component: ListUserComponent },
   {path:'list-question', component:ListQuestionComponent},
   { path: 'update-user/:id', component: UpdateUserComponent }, 
@@ -23,7 +36,9 @@ const routes: Routes = [
   {path:'add-question',component:AddQuestionComponent},
   {path: 'list-quiz', component:ListQuizComponent},
   {path:'create-quiz', component:CreateQuizComponent},
-  {path:'quiz-attempt' , component:QuizAttemptComponent}
+  {path:'quiz-attempt' , component:QuizAttemptComponent},
+  {path:'contact-us', component:ContactUsComponent},
+  {path:'about-us' ,component:AboutUsComponent},
 ];
 
 @NgModule({

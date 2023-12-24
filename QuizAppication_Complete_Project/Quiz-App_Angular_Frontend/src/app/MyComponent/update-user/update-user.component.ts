@@ -10,7 +10,7 @@ import { UserService } from 'src/app/Service/user.service';
 })
 export class UpdateUserComponent implements OnInit {
   userId!: number;
-  user: User = new User(0, '', '', '', '', '', '', '');
+  user: User = new User(0, '', '', '', '', '', '', '','user');
 
   constructor(
     private route: ActivatedRoute,

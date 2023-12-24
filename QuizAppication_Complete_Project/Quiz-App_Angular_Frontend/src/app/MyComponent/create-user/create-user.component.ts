@@ -10,7 +10,7 @@ import { UserService } from 'src/app/Service/user.service';
 })
 
 export class CreateUserComponent {
-  user: User = new User(0, '', '', '', '', '', '', '');
+  user: User = new User(0, '', '', '', '', '', '', '','user');
 
   constructor(private router: Router, private userService: UserService) {}
 
