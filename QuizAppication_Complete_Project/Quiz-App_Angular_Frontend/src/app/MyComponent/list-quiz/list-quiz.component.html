@@ -1,8 +1,13 @@
+
+<app-user-navbar></app-user-navbar>
 <br><br>
+
+<h1>Quiz List</h1>
 <div class="quiz-list">
     <div *ngFor="let quiz of quizzes" class="quiz-card">
       <h3>{{ quiz.title }}</h3>
       <p class="quiz-id">ID: {{ quiz.id }}</p>
+      <button class="btn btn-danger"(click)="MoveToInstructionPage()">Start</button>
     </div>
   </div>
   

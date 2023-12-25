@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { QuizService } from 'src/app/Service/quiz.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class ListQuizComponent {
 
   quizzes: any[] = []; 
 
-  constructor(private quizService: QuizService) { }
+  constructor(private quizService: QuizService , private router:Router) { }
 
   ngOnInit(): void {
     this.loadQuizzes();
@@ -27,4 +28,9 @@ export class ListQuizComponent {
     );
   }
 
+  MoveToInstructionPage()
+  {
+    return this.router.navigate(['/instruction']);
+
+  }
 }

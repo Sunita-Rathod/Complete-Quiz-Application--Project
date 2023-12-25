@@ -9,3 +9,41 @@
     form {
       margin-top: 10px; /* Add a small margin at the top of the form */
     }
+    /* Add this to your component's CSS file or global styles */
+
+.user-form-container {
+  background-color: #f0f0f0; /* Set your desired background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.user-form-container h2 {
+  color: #333; /* Set your desired text color */
+}
+
+.user-form-container label {
+  color: #555; /* Set label text color */
+}
+
+.user-form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Set input border color */
+  border-radius: 5px;
+}
+
+.user-form-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Set button background color */
+  color: #fff; /* Set button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-form-container button:disabled {
+  background-color: #ccc; /* Set disabled button background color */
+  cursor: not-allowed;
+}

@@ -1,1 +1,27 @@
 <app-user-navbar></app-user-navbar>
+<script>
+    var myVar;
+
+function myFunction() {
+myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<!--LOADER<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">-->
+    <h1 class="heading">User Dashboard</h1>
+
+<div class="container">
+<section>
+<label>
+    <h1 class="logo">Quiz App<em>.</em></h1>
+
+</label>
+</section>
+</div>
+<!--IF LOADER INCLUDED</div>-->

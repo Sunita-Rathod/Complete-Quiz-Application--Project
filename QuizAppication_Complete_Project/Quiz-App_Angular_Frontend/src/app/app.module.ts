@@ -29,6 +29,14 @@ import { UserNavbarComponent } from './MyComponent/user-navbar/user-navbar.compo
 import { AdminDashboardComponent } from './MyComponent/admin-dashboard/admin-dashboard.component';
 import { ContactUsComponent } from './MyComponent/contact-us/contact-us.component';
 import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
+import { InstructionComponent } from './MyComponent/instruction/instruction.component';
+import { StartQuizComponent } from './MyComponent/start-quiz/start-quiz.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
+
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -55,6 +63,9 @@ import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
     AdminDashboardComponent,
     ContactUsComponent,
     AboutUsComponent,
+    InstructionComponent,
+    StartQuizComponent,
+    
 ],
   imports: [
     BrowserModule,
@@ -62,7 +73,12 @@ import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
     HttpClientModule ,
     FormsModule ,
     RouterModule ,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatDividerModule,
+
+
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

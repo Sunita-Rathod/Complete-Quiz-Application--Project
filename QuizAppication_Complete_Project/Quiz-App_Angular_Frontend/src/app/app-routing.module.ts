@@ -17,6 +17,8 @@ import { UserDashboardComponent } from './MyComponent/user-dashboard/user-dashbo
 import { SignUpComponent } from './auth/sign-up/singup.component';
 import { ContactUsComponent } from './MyComponent/contact-us/contact-us.component';
 import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
+import { InstructionComponent } from './MyComponent/instruction/instruction.component';
+import { StartQuizComponent } from './MyComponent/start-quiz/start-quiz.component';
 
 const routes: Routes = [
   {path:'' ,component:HomeComponent},
@@ -39,6 +41,8 @@ const routes: Routes = [
   {path:'quiz-attempt' , component:QuizAttemptComponent},
   {path:'contact-us', component:ContactUsComponent},
   {path:'about-us' ,component:AboutUsComponent},
+  {path:'instruction' , component:InstructionComponent},
+  {path:'start-quiz',component:StartQuizComponent},
 ];
 
 @NgModule({
