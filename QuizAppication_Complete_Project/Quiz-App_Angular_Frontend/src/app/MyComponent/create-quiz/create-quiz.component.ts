@@ -16,7 +16,20 @@ export class CreateQuizComponent {
   constructor(private quizService: QuizService ,private router:Router) { }
 
   createQuiz() {
-    if (this.quizTitle && this.quizCategory && this.numQuestions > 0) {
+    if(this.quizTitle==null||this.quizTitle==''){
+      console.log("Invalid data!! quiz title can't be empty or null");
+      return;
+  }
+
+    if(this.quizCategory==null||this.quizCategory==''){
+      console.log("Invalid data!! quiz title can't be empty or null");
+      return;
+  }
+  if(this.numQuestions==null||this.numQuestions== 0){
+    console.log("Invalid data!! quiz title can't be empty or null");
+    return;
+}
+  if (this.quizTitle && this.quizCategory && this.numQuestions > 0) {
       this.quizService.createQuiz(this.quizCategory, this.numQuestions, this.quizTitle).subscribe(
         response => {
           console.log('Quiz created successfully:', response);

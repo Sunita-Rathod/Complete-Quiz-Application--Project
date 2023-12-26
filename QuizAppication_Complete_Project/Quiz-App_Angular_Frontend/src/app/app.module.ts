@@ -36,6 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 
 import { MatDividerModule } from '@angular/material/divider';
+import { QuizQuestionsComponent } from './MyComponent/quiz-questions/quiz-questions.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { MatDividerModule } from '@angular/material/divider';
     AboutUsComponent,
     InstructionComponent,
     StartQuizComponent,
+    QuizQuestionsComponent,
     
 ],
   imports: [

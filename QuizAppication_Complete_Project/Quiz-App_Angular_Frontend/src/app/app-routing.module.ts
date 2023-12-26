@@ -19,6 +19,7 @@ import { ContactUsComponent } from './MyComponent/contact-us/contact-us.componen
 import { AboutUsComponent } from './MyComponent/about-us/about-us.component';
 import { InstructionComponent } from './MyComponent/instruction/instruction.component';
 import { StartQuizComponent } from './MyComponent/start-quiz/start-quiz.component';
+import { QuizQuestionsComponent } from './MyComponent/quiz-questions/quiz-questions.component';
 
 const routes: Routes = [
   {path:'' ,component:HomeComponent},
@@ -41,8 +42,10 @@ const routes: Routes = [
   {path:'quiz-attempt' , component:QuizAttemptComponent},
   {path:'contact-us', component:ContactUsComponent},
   {path:'about-us' ,component:AboutUsComponent},
-  {path:'instruction' , component:InstructionComponent},
-  {path:'start-quiz',component:StartQuizComponent},
+  {path:'instruction/:id' , component:InstructionComponent},
+  { path:'start-quiz/:id', component: StartQuizComponent },
+  //{ path: '', redirectTo: '/list-quiz', pathMatch: 'full' },
+  { path:'quiz-questions/:id', component: QuizQuestionsComponent },
 ];
 
 @NgModule({

@@ -9,9 +9,9 @@ import { QuizService } from 'src/app/Service/quiz.service';
 })
 export class ListQuizComponent {
 
-  quizzes: any[] = []; 
+  quizzes: any[] = [];
 
-  constructor(private quizService: QuizService , private router:Router) { }
+  constructor(private quizService: QuizService, private router: Router) {}
 
   ngOnInit(): void {
     this.loadQuizzes();
@@ -28,9 +28,7 @@ export class ListQuizComponent {
     );
   }
 
-  MoveToInstructionPage()
-  {
-    return this.router.navigate(['/instruction']);
-
+  MoveToInstructionPage(quizId: number) {
+    return this.router.navigate(['/instruction', quizId]);
   }
 }

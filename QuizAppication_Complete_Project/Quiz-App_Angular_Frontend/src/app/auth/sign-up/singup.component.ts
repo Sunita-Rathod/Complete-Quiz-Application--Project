@@ -32,7 +32,7 @@ this.id=0;
     this.password = '';
     this.contact='';
     this.token  = '';
-    this.role= '';
+    this.role= 'user';
   }
 
   signup() {
@@ -42,15 +42,19 @@ this.id=0;
      this.user.role = this.role;
     this.user.contact=this.contact;
     this.user.email=this.email;
+    this.user.firstName = this.firstName;
+    this.user.lastName = this.lastName;
+
+
     
     this.authService.signUp(this.user).subscribe(res => {
       if(res == null) {
         alert("Registration failed");
-        this.ngOnInit();
+       // this.ngOnInit();
       }else {
         console.log("Registration successful");
         alert("Registration successful");
-        this.route.navigate(['login']);
+        this.route.navigate(['/login']);
       }
     }, err => {
       alert("Registration failed.");
@@ -60,7 +64,7 @@ this.id=0;
   }
 
   login(){
-    this.route.navigate(['login']);
+    this.route.navigate(['/login']);
 
   }
 

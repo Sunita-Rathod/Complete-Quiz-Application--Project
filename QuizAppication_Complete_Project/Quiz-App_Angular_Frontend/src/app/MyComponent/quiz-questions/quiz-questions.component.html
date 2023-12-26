@@ -1,0 +1,16 @@
+<div *ngIf="questions.length > 0">
+    <h2>Quiz Questions</h2>
+    <div *ngFor="let question of questions" class="question-card">
+      <h3>{{ question.questionTitle }}</h3>
+      <ul>
+        <li>{{ question.option1 }}</li>
+        <li>{{ question.option2 }}</li>
+        <li>{{ question.option3 }}</li>
+        <li>{{ question.option4 }}</li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="questions.length === 0">
+    <p>No questions available for this quiz.</p>
+  </div>
+  

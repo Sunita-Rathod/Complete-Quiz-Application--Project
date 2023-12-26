@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Quiz } from 'src/app/Model/Quiz';
+import { QuizService } from 'src/app/Service/quiz.service';
 
 @Component({
   selector: 'app-instruction',
@@ -7,15 +9,5 @@ import { Quiz } from 'src/app/Model/Quiz';
   styleUrls: ['./instruction.component.css']
 })
 export class InstructionComponent {
-  quiz: Quiz = {
-    id: 1, // Replace with the actual ID
-    title: 'Sample Quiz', // Replace with the actual title
-    questions: [],
-    numberOfQuestions: undefined,
-    description: undefined
-  };
-  startQuiz() {
-    // Implementation of startQuiz method
-    console.log('Quiz started!');
-  }
+  
 }

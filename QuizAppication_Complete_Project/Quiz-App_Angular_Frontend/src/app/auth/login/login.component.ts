@@ -38,10 +38,11 @@ export class LoginComponent {
     this.authService.login(this.user).subscribe(res => {
 
       if(res == null) {
-        alert("Username or password is Empty");
+        alert("All fields are is Required!");
         this.ngOnInit();
       }else {
         console.log("Login successful");
+        alert("Login Successful");
         localStorage.setItem("token",res.token);
 
         if(this.role == 'user') {

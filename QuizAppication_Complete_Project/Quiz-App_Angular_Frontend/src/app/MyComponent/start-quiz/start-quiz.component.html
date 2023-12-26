@@ -1,1 +1,12 @@
-<p>start-quiz works!</p>
+<app-instruction></app-instruction>
+
+<p class="color">Start Quiz</p>
+<div class="bootstrap-wrapper">
+  <mat-card-content style="margin-left: 2%;">
+    <!-- <h1>TITLE:{{ quiz.id }}</h1> -->
+  </mat-card-content>
+
+  <mat-card-actions class="text-center">
+    <button class="btn btn-primary" mat-raised-button color="primary" (click)="startQuiz()">Start Quiz</button>
+  </mat-card-actions>
+</div>
